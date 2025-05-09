@@ -1,7 +1,12 @@
 #!/usr/bin/env node
 import { program } from 'commander';
-// 修改 JSON 导入方式
-import pkg from '../package.json' with { type: 'json' };
+
+// eslint-disable-next-line no-async-promise-executor
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const pkg = require('../package.json');
+
+// eslint-disable-next-line no-async-promise-executor
 import chalk from 'chalk';
 // 添加 init 命令导入
 import init from '../lib/commands/init.js';
