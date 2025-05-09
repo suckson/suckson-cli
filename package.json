@@ -1,7 +1,7 @@
 {
-    "name": "my-cli",
+    "name": "suckson-cli",
     "version": "1.0.0",
-    "description": "A powerful CLI tool for project scaffolding",
+    "description": "初始化suckson-cli后台管理脚手架",
     "main": "lib/index.js",
     "bin": {
       "suckson-cli": "./bin/cli.js"
@@ -11,8 +11,7 @@
       "dev": "nodemon bin/cli.js",
       "test": "vitest",
       "lint": "eslint .",
-      "prepublishOnly": "npm run lint && npm test",
-      "release": "standard-version"
+      "prepublishOnly": "npm run lint && npm test"
     },
     "type": "module",
     "engines": {
@@ -29,7 +28,7 @@
       "boilerplate",
       "generator"
     ],
-    "author": "Your Name <your.email@example.com>",
+    "author": "791076633@qq.com",
     "license": "MIT",
     "dependencies": {
       "chalk": "^5.4.1",
